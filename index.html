@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge Encriptador</title>
+</head>
+
+<body>
+
+    <main class="main-home">
+        <header>
+            <img class="logo" src="assets/logo.png" alt="Logo de Alura">
+        </header>
+
+        <section class="input-texto">
+            <!-- <input type="text" class="texto-a-desencriptar" placeholder="Ingrese el texto aqui"> -->
+
+            <textarea name="textoSeleccionado" class="texto-a-desencriptar" id="texto-seleccionado" placeholder="Ingrese el texto aqui" cols="30" rows="10"></textarea>
+            <section class="botonera">
+                <p><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    Solo letras y numeros</p>
+                <section class="botones">
+                    <button id="encriptar-boton">Encriptar</button>
+                    <button id="desencriptar-boton">Desencriptar</button>
+                </section>
+            </section>
+        </section>
+
+        <section class="rectangle">
+            <section class="area-resultado">
+                <p id="texto-resultado"></p>
+            </section>
+            <img class="munheco" src="assets/munheco.svg" alt="">
+            <h3>Ningún mensaje fue encontrado</h3>
+            <p class="ningun-mensaje">
+                Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+            <button onclick="copiarTexto()"  id="copiar">Copiar</button>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

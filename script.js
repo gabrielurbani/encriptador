@@ -66,12 +66,12 @@ function desencriptar(texto) {
 function copiarTexto() {
         // Lee el texto 
         let texto = document.getElementById("texto-resultado").innerHTML;
-       
+
         // Lo copia al clipboard
         navigator.clipboard.writeText(texto);
 
         // Lo pega directo en el textarea
         document.getElementById("texto-seleccionado").value = texto;
-              
+
 
 }

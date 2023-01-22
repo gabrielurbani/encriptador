@@ -23,7 +23,7 @@
         <section class="input-texto">
             <!-- <input type="text" class="texto-a-desencriptar" placeholder="Ingrese el texto aqui"> -->
 
-            <textarea name="textoSeleccionado" class="texto-a-desencriptar" id="texto-seleccionado" placeholder="Ingrese el texto aqui" cols="30" rows="10"></textarea>
+            <textarea name="textoSeleccionado" class="texto-a-desencriptar" id="texto-seleccionado" placeholder="Ingrese el texto aqui" cols="20" rows="8"></textarea>
             <section class="botonera">
                 <p><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
                     Solo letras y numeros</p>
@@ -39,12 +39,9 @@
                 <p id="texto-resultado"></p>
             </section>
             <img class="munheco" src="assets/munheco.svg" alt="">
-            <h3>Ningún mensaje fue encontrado</h3>
-            <p class="ningun-mensaje">
-                Ingresa el texto que desees encriptar o desencriptar.
-            </p>
+            <span class="ningun-mensaje"><h3>Ningún mensaje fue encontrado</h3>
+            Ingresa el texto que desees encriptar o desencriptar.</span>
             <button onclick="copiarTexto()"  id="copiar">Copiar</button>
-
         </section>
     </main>
     <script src="script.js"></script>
